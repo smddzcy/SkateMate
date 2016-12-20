@@ -1,0 +1,27 @@
+ion-app._gmaps_cdv_ .nav-decor {
+  background-color: transparent !important;
+}
+
+page-home {
+  #map {
+    @extend .full-width;
+    min-height: 65%;
+    max-height: 65%;
+  }
+
+  ion-searchbar {
+    position: absolute;
+    margin-top: 20px;
+    padding: 0 5% !important;
+    background: transparent !important;
+
+    .searchbar-input {
+      border-radius: 20px !important;
+      background-color: color($colors, dark) !important;
+      border: 1px solid color($colors, dark-border) !important;
+      color: color($colors, light) !important;
+      box-shadow: none !important;
+    }
+
+  }
+}

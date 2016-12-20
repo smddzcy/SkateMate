@@ -1,0 +1,59 @@
+.custom-icon-base {
+  width: auto;
+  height: 32px;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+
+.ion-ios-custom-icon-compass,
+.ion-md-custom-icon-compass,
+.ion-wp-custom-icon-compass {
+  @extend .custom-icon-base;
+  background: url('../assets/img/compass.svg');
+
+  &-outline {
+    @extend .custom-icon-base;
+    background: url('../assets/img/compass.svg');
+    opacity: 0.5;
+  }
+}
+
+.ion-ios-custom-icon-logo,
+.ion-md-custom-icon-logo,
+.ion-wp-custom-icon-logo {
+  @extend .custom-icon-base;
+  background: url('../assets/img/logo.png');
+
+  &-outline {
+    @extend .custom-icon-base;
+    background: url('../assets/img/logo.png');
+    opacity: 0.5;
+  }
+}
+
+.ion-ios-custom-icon-notifications,
+.ion-md-custom-icon-notifications,
+.ion-wp-custom-icon-notifications {
+  @extend .custom-icon-base;
+  background: url('../assets/img/notifications.svg');
+
+  &-outline {
+    @extend .custom-icon-base;
+    background: url('../assets/img/notifications.svg');
+    opacity: 0.5;
+  }
+}
+
+.ion-ios-custom-icon-profile,
+.ion-md-custom-icon-profile,
+.ion-wp-custom-icon-profile {
+  @extend .custom-icon-base;
+  background: url('../assets/img/profile.svg');
+
+  &-outline {
+    @extend .custom-icon-base;
+    background: url('../assets/img/profile.svg');
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,13 @@
+<div
+  class="discover-spot-list-element-wrapper"
+  [ngStyle]="{'background': 'url('+ spot.img +')'}">
+  <div class="discover-spot-list-element-title">{{ spot.name }}</div>
+  <div class="discover-spot-list-element-desc">
+    {{ spot.description }}
+  </div>
+  <div class="discover-spot-list-element-info">
+    <skate-mate-logo width="16px" height="auto"></skate-mate-logo>
+    {{ spot.distance }}
+    Uzaklıkta
+  </div>
+</div>

@@ -1,0 +1,13 @@
+page-login {
+  .header-img {
+    @extend .full-width;
+    max-height: 40%;
+  }
+  .login-button {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    max-width: 85%;
+    transform: translate(-50%, -50%);
+  }
+}

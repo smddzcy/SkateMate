@@ -1,0 +1,35 @@
+discover-spot-list-element {
+  display: flex;
+  border-top: 0.5px solid #666; // border between map and adjacent list element
+
+  .discover-spot-list-element-wrapper {
+    @extend .flex-column;
+    flex: 1 1 auto;
+    padding: 0 20px 10px;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+
+    .discover-spot-list-element-title {
+      padding-top: 60px;
+      font-size: 18px;
+    }
+
+    .discover-spot-list-element-desc {
+      font-size: 14px;
+    }
+
+    .discover-spot-list-element-info {
+      @extend .flex-row;
+      align-items: center;
+
+      skate-mate-logo {
+        margin-right: 10px;
+      }
+    }
+    // Margin between inside text
+    & > *:nth-child(n+2) {
+      margin-top: 3px;
+    }
+  }
+}

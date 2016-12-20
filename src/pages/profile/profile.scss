@@ -1,0 +1,53 @@
+page-profile {
+  @mixin bg-cover-center {
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+
+  .profile {
+    @extend .flex-column;
+    @include bg-cover-center;
+    padding: 30px 5%;
+    align-items: center;
+    text-align: center;
+    min-height: 40%;
+
+    .name {
+      font-weight: 800;
+      margin-top: 5px;
+    }
+
+    .nickname {
+      font-weight: 800;
+      margin-top: 2px;
+    }
+
+    .bio {
+      font-size: 12px;
+      margin-top: 7px;
+    }
+
+    .numbers {
+      @extend .flex-row;
+      @extend .full-width;
+      justify-content: space-around;
+      margin-top: 10px;
+
+      .number {
+        font-weight: 900;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .spot-images {
+    @extend .flex-row;
+
+    .spot-image {
+      @include bg-cover-center;
+      border: 1px solid white;
+      flex: 1 1 30%;
+      height: 120px; // TODO: %lik değere çevir
+    }
+  }
+}

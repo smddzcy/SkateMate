@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Discover</ion-title>
+
+    <ion-buttons right>
+      <button ion-button icon-only>
+        <ion-icon name="paper-plane" ios="ios-paper-plane-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar
+    [(ngModel)]="searchSpotName"
+    (ionInput)="onSearchSpotName($event)"
+    placeholder="Search..."></ion-searchbar>
+  <div #map id="map"></div>
+  <discover-spot-list-element *ngFor="let i of [0,1,2]"></discover-spot-list-element>
+</ion-content>

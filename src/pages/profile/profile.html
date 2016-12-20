@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="profile" [ngStyle]="{'background':'url('+ bgImg +')'}">
+    <img [src]="img" alt="Profile picture">
+    <span class="name">{{ name }}</span>
+    <span class="nickname">{{ nickname }}</span>
+    <span class="bio">{{ bioText }}</span>
+    <div class="numbers">
+      <div>
+        <span class="number">{{ spotCount }}</span><br/>spot</div>
+      <div>
+        <span class="number">{{ followerCount }}</span><br/>takipçi</div>
+      <div>
+        <span class="number">{{ followingCount }}</span><br/>takip</div>
+    </div>
+  </div>
+  <div class="spot-images">
+    <div *ngFor="let imageSrc of spotImages" class="spot-image"
+         [ngStyle]="{'background':'url('+ imageSrc +')'}"></div>
+  </div>
+</ion-content>
