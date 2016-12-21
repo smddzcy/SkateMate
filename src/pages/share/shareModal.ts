@@ -12,7 +12,9 @@ export class ShareModal {
   constructor(
     public appCtrl: App,
     public viewCtrl: ViewController
-  ) { }
+  ) {
+    this.takePicture();
+  }
 
   takePicture() {
     Camera.getPicture({
@@ -26,17 +28,18 @@ export class ShareModal {
       // imageData is a base64 encoded string
       this.base64Image = "data:image/jpeg;base64," + imageData;
       Camera.cleanup();
+      this.popPage();
     }, (err) => {
       console.log(err);
     });
   }
 
   popPage() {
-    this.viewCtrl.dismiss();
+    this.viewCtrl.dismiss(this.base64Image);
   }
 
   pushPage() {
-    this.viewCtrl.dismiss();
+    this.viewCtrl.dismiss(this.base64Image);
     this.appCtrl.getRootNav().push(SelectLocation, {
       shareModal: this
     });

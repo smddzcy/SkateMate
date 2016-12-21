@@ -23,7 +23,7 @@ export class LoginPage {
     setTimeout(_ => {
       loader.dismiss();
       this.navCtrl.setRoot(TabsPage);
-    }, 2000);
+    }, 1000);
   }
 
 }
