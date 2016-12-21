@@ -5,6 +5,6 @@ SkateMate enables skaters to find and share new spots, and connect with each oth
 
 ## About
 It was our ENG 493 - Launching a Successful Software Startup course project in 2016 Fall term, at Boğaziçi University.
-We've finally succeeded after failing on 2 projects and starting from scratch.
+We've finally succeeded after failing on 2 projects; Yonetimmy - Easy apartment block & flat management, Pupil - Crowdsourced news app, also tried to make people paparazzis. 
 
 This repo consists of the mobile demo app and the [pitch deck](PITCH_DECK.md).
