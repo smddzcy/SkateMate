@@ -1,7 +1,7 @@
 {
-  "name": "ionic-hello-world",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "name": "skate-mate",
+  "author": "Samed Düzçay",
+  "homepage": "http://getskatemate.com/",
   "private": true,
   "scripts": {
     "ionic:build": "ionic-app-scripts build",
@@ -44,5 +44,5 @@
       "locator": "ios"
     }
   ],
-  "description": "skateMate: An Ionic project"
+  "description": "SkateMate: Meet new skaters, find new spots."
 }
